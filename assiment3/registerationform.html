@@ -1,33 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+
+<style>
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page center */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #86d0f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 350px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Button */
+input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+</style>
 </head>
+
 <body>
-    <h1>register</h1>
-    <link rel="stylesheet" href="registerationform.css"> 
 
-    <h2>name</h2>
-    <input type="Enter name" placeholder="Enter name">
+<div class="container">
+    <h1>Register</h1>
 
-    <h3>Email Address</h3>
-    <input type="email" placeholder="Enter email">
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Enter name" required>
 
-    <br><br>
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
 
-    <h4>Password</h4>
-    <input type="password" placeholder="Enter password">
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
 
-    <br><br>
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter number" required>
 
-    <h5>phone number</h5>
-    <input type="enter number" placeholder="Enter number">
-    <br><br>
+        <input type="submit" value="Register">
+    </form>
+</div>
 
-    <input type="submit" value="register">
-    
-    
 </body>
 </html>

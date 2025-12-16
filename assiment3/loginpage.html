@@ -1,23 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<style>
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page center */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #50b3f1;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 350px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Button */
+input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+</style>
 </head>
+
 <body>
 
+<div class="container">
     <h1>Login</h1>
 
-    <h2>Email Address</h2>
-    <input type="email" placeholder="Enter email">
+    <form>
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
 
-    <br><br>
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
 
-    <h3>Password</h3>
-    <input type="password" placeholder="Enter password">
-
-    <br><br>
-
-    <input type="submit" value="Login">
+        <input type="submit" value="Login">
+    </form>
+</div>
 
 </body>
 </html>
